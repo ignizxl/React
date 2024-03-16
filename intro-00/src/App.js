@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 
 function App() {
   const name    = 'João Igor';
@@ -17,6 +18,9 @@ function App() {
       <p>Olá de novo, {newName}!</p>
       <p>A soma entre {10} e {14} é igual a {somarDoisNumeros(10, 14)}</p>
       <img src={url} alt="minha imagem"></img>
+      
+      {/* importando o componente HelloWorld*/}
+      <HelloWorld></HelloWorld>
     </div>
   );
 }
