@@ -3,6 +3,8 @@ import HelloWorld from './components/HelloWorld';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import List from './components/List';
+import Evento from './components/Evento';
+import Form from './components/Form';
 
 function App() {
   const name    = 'João Igor';
@@ -23,11 +25,13 @@ function App() {
       <img src={url} alt="minha imagem"></img>*/}
       
       {/* importando o componente HelloWorld*/}
-      <HelloWorld></HelloWorld>
+      {/* <HelloWorld></HelloWorld> */}
       {/* importando o componente SayMyName e alterando a propriedade name do meu componente*/}
       <SayMyName name={name}></SayMyName>
       <Pessoa nome={"José"} idade={20} profissao={"Desenvolvedor Web"} src={url}></Pessoa>
-      <List></List>
+      {/* <List></List> */}
+      <Evento nome={"João"}></Evento>
+      <Form></Form>
     </div>
   );
 } 
