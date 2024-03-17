@@ -1,0 +1,16 @@
+/* Estilizando a nivel de componente */
+/* A nomenclatura dos arquivos deve seguir o padrão camelCase com a seguinte extensão: 
+.module.css --> exemplo: NomeDoComponente.module.css */
+/* A nomenclatura das classes deve seguir o padrão camelCase */
+
+.fraseContainer{
+    background-color: #333;
+    border: 1px solid #111;
+}
+
+.fraseContent{
+    color: #fff;
+    background-color: #333;
+    margin: 0;
+    border: 2px solid #111;
+}
