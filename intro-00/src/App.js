@@ -2,6 +2,7 @@ import './App.css';
 import HelloWorld from './components/HelloWorld';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
+import List from './components/List';
 
 function App() {
   const name    = 'João Igor';
@@ -26,7 +27,7 @@ function App() {
       {/* importando o componente SayMyName e alterando a propriedade name do meu componente*/}
       <SayMyName name={name}></SayMyName>
       <Pessoa nome={"José"} idade={20} profissao={"Desenvolvedor Web"} src={url}></Pessoa>
-
+      <List></List>
     </div>
   );
 } 
