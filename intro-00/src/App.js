@@ -30,7 +30,7 @@ function App() {
       <SayMyName name={name}></SayMyName>
       <Pessoa nome={"José"} idade={20} profissao={"Desenvolvedor Web"} src={url}></Pessoa>
       {/* <List></List> */}
-      <Evento nome={"João"}></Evento>
+      <Evento></Evento>
       <Form></Form>
     </div>
   );
