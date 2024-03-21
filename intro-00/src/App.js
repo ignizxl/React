@@ -5,6 +5,7 @@ import Pessoa from './components/Pessoa';
 import List from './components/List';
 import Evento from './components/Evento';
 import Form from './components/Form';
+import Condicional from './components/Condicional';
 
 function App() {
   const name    = 'João Igor';
@@ -31,7 +32,8 @@ function App() {
       <Pessoa nome={"José"} idade={20} profissao={"Desenvolvedor Web"} src={url}></Pessoa>
       {/* <List></List> */}
       <Evento></Evento>
-      <Form></Form>
+      <Form></Form> 
+      <Condicional></Condicional>
     </div>
   );
 } 
