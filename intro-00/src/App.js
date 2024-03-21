@@ -6,14 +6,17 @@ import List from './components/List';
 import Evento from './components/Evento';
 import Form from './components/Form';
 import Condicional from './components/Condicional';
+import OutraLista from "./components/OutraLista";
 
 function App() {
-  const name    = 'João Igor';
+  // const name    = 'João Igor';
   // const newName = name.toLocaleUpperCase();
-  const url     = "https://via.placeholder.com/150";
+  // const url     = "https://via.placeholder.com/150";
   // function somarDoisNumeros(n1, n2){
   //   return n1 + n2;
-  // 
+
+  const linguagens = ["javascript", "python", "c++", "java"];
+  const listaVazia = [];
 
   return (
     <div className="App">
@@ -28,12 +31,14 @@ function App() {
       {/* importando o componente HelloWorld*/}
       {/* <HelloWorld></HelloWorld> */}
       {/* importando o componente SayMyName e alterando a propriedade name do meu componente*/}
-      <SayMyName name={name}></SayMyName>
-      <Pessoa nome={"José"} idade={20} profissao={"Desenvolvedor Web"} src={url}></Pessoa>
+      {/* <SayMyName name={name}></SayMyName>
+      <Pessoa nome={"José"} idade={20} profissao={"Desenvolvedor Web"} src={url}></Pessoa> */}
       {/* <List></List> */}
       <Evento></Evento>
       <Form></Form> 
       <Condicional></Condicional>
+      <OutraLista itens={linguagens}></OutraLista>
+      <OutraLista itens={listaVazia}></OutraLista>
     </div>
   );
 } 
