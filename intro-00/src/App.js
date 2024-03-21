@@ -1,12 +1,16 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
-import SayMyName from './components/SayMyName';
-import Pessoa from './components/Pessoa';
-import List from './components/List';
-import Evento from './components/Evento';
-import Form from './components/Form';
-import Condicional from './components/Condicional';
-import OutraLista from "./components/OutraLista";
+import { useState } from 'react';
+import SeuNome from './components/SeuNome';
+
+
+// import HelloWorld from './components/HelloWorld';
+// import SayMyName from './components/SayMyName';
+// import Pessoa from './components/Pessoa';
+// import List from './components/List';
+// import Evento from './components/Evento';
+// import Form from './components/Form';
+// import Condicional from './components/Condicional';
+// import OutraLista from "./components/OutraLista";
 
 function App() {
   // const name    = 'João Igor';
@@ -14,10 +18,12 @@ function App() {
   // const url     = "https://via.placeholder.com/150";
   // function somarDoisNumeros(n1, n2){
   //   return n1 + n2;
+  // const linguagens = ["javascript", "python", "c++", "java"];
+  // const listaVazia = [];
 
-  const linguagens = ["javascript", "python", "c++", "java"];
-  const listaVazia = [];
-
+  // compartilhando o state nos componentes SeuNome e Saudacao
+  const [nome, setNome] = useState();
+  console.log(nome);
   return (
     <div className="App">
       {/* <h1>Hello World!</h1>
@@ -34,11 +40,14 @@ function App() {
       {/* <SayMyName name={name}></SayMyName>
       <Pessoa nome={"José"} idade={20} profissao={"Desenvolvedor Web"} src={url}></Pessoa> */}
       {/* <List></List> */}
-      <Evento></Evento>
+      {/* <Evento></Evento>
       <Form></Form> 
       <Condicional></Condicional>
       <OutraLista itens={linguagens}></OutraLista>
-      <OutraLista itens={listaVazia}></OutraLista>
+      <OutraLista itens={listaVazia}></OutraLista> */}
+      <h1>State Lift</h1>
+      <SeuNome setNome={setNome}></SeuNome>
+      <p><strong>{nome}</strong></p>
     </div>
   );
 } 
