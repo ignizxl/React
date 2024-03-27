@@ -4,7 +4,6 @@ function Saudacao({nome}){
     return `Olá, ${algumNome}! tudo bem?`;
   }
   return (
-    
     <>
     {/* condição */}
     {/* se há algo em nome, irá imprimir a saudação */}   
