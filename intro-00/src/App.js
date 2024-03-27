@@ -13,6 +13,7 @@ function App() {
       {/* aqui eu posso definir as minhas views e os meus componentes padrão */}
       <NavBar></NavBar>
       <Routes>
+        {/* Utilize o comando: 'npm install react-router-dom' */}
         {/* aqui, dentro do Routes eu vou definir as rotas */}
         <Route exact path="/" element={<Home></Home>}/>
           {/* Quando o path for exatamente '/', ele será representado pelo componente 'home' */}
