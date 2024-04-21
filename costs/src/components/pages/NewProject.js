@@ -14,12 +14,13 @@ function NewProject() {
       method: "POST",
       headers: {
         'Content-type': 'application/json'
-      }, body: JSON.stringify(project)  
+      }, body: JSON.stringify(project)
     }).then((resp) => resp.json())
       .then((data) => {
         console.log(data);
         //redirect
-        navigate("/projects", { message: "Projeto criado com sucesso!" });
+        const state = { message: "Projeto criado com sucesso!" };
+        navigate("/projects", { state });
       }).catch((error) => console.log(error));
   }
 
