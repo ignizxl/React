@@ -1,7 +1,9 @@
 
-function Projects(){
+function Projects() {
   return (
-    <div></div>
+    <div>
+      <h1>Projects</h1>
+    </div>
   );
 }
 
